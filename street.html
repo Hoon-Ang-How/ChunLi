@@ -154,13 +154,11 @@
             .innerHTML = `Wins:${score.wins}, Losses:${score.losses}, Ties:${score.ties}, Games:${score.games}`;
         }
         function resetfunction(emotion){
-          if (emotion==='laugh'){
-        document.querySelector('.js-result').innerHTML = '';      
+          if (emotion==='laugh'){     
         document.querySelector('.js-announce').innerHTML = 'Hooray! You won!';
         document.querySelector('.js-ryu').innerHTML = `<img src="./happy.gif" class="ken"><img src="./victory.gif" class="ken"><audio autoplay=""src="./laugh.mp3"></audio>`;
 
-          } else if (emotion === 'cry'){
-          document.querySelector('.js-result').innerHTML = '';      
+          } else if (emotion === 'cry'){     
           document.querySelector('.js-announce').innerHTML = 'Urghhhhh..You Lose. Game over';
           document.querySelector('.js-ryu').innerHTML = `<img src="./dizzy.gif" class="ken"><img src="./sob.gif" class="ken"><audio autoplay=""src="./injured.mp3"></audio>`;
           }
